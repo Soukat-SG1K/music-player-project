@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnimeMusicPlayer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  
+  <body>
+    <nav>
+      <ul>
+        <li class="brand">
+          <img src = "icon.jpg" alt-"AnimeMusicPlayer">Anime Music Player
+        </li>
+        <li>Home</li>
+        <li>About</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <video autoplay muted loop id="background-video">
+        <source src="anime-girl-listening-to-music-relaxing-moewalls-com.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h1>My playlist</h1>
+      <label for="fileInput" class="file-upload-btn">
+        <i class="fa-regular fa-folder"></i>
+      </label>
+      <input type="file" id="fileInput" multiple style="display: none;">
+      <audio id="audioPlayer" controls></audio>
+        <div class="songlist"></div>
+        <div class="songbanner"></div>
+    </div>
+
+    <div class="bottom">
+      <input type="range" name="range" id="myProgressBar" min="0" max="100" />
+      <div class="icons">
+        <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+</html>
